@@ -7,7 +7,6 @@ body {
     background-color: #102a43;
     color: #f0f4f8;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0
 }
 
 /* Navigational Bar (no flex, browser default web responsiveness, no divs) just using the nav element which is a simplified list */
