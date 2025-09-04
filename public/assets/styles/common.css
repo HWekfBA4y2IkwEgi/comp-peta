@@ -1,4 +1,8 @@
 /* Global settings */
+
+/* CSS was designed in a way such that it wouldn't change my group mates designed CSS code except the background.
+Everything you see with my groupmates are the same as how they inteded it.*/
+
 body {
     background-color: #102a43;
     color: #f0f4f8;
@@ -6,11 +10,7 @@ body {
     margin: 0
 }
 
-h1, h2, h3, h4, h5, h6, p, a, span {
-    text-align: center;
-}
-
-/* Navigational Bar (no flex, browser default web responsiveness, no divs) just basics */
+/* Navigational Bar (no flex, browser default web responsiveness, no divs) just using the nav element which is a simplified list */
 
 .float-right {
     float: right;
@@ -31,7 +31,7 @@ nav {
     outline: solid 1px #829ab1; 
 }
 
-nav * {
+nav a, nav strong {
     background-color: #486581;
     color:#f0f4f8;
 
@@ -41,4 +41,57 @@ nav * {
     text-decoration: none;
 }
 
+/* Articles & Sections */
+
+section header h1 {
+    color: #f0f4f8;
+    text-align: center;
+}
+
+section header h4 {
+    color:  #486581;
+    text-align: center;
+    margin: 4px;
+}
+
+section article p {
+    text-align: center;
+}
+
+section article {
+    max-width: 25%;
+    margin: 24px auto;
+
+    border: 1px solid #829ab1;
+    padding: 4px;
+    background-color: #0b1c2d;
+    box-shadow: 5px 10px 18px #0b1c2d50;
+    border-radius: 8px;
+}
+
+section hr {
+    background-color:#829ab1;
+    border: none;
+
+    height: 1px;
+    width: 95%;
+}
+
 /* Pages */
+
+.page {
+  display: none;
+}
+
+.page:target {
+  display: block;
+}
+
+body:not(:has(:target)) #home {
+  display: block;
+}
+
+#home:target {
+  display: block;
+}
+
