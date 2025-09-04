@@ -12,7 +12,17 @@
 	},
 	"observability": {
 		"enabled": true
-	}
+	},
+
+	"routes": [
+		{
+			"pattern": "htmlcss.qzz.io", // Free domain (DigitalPlat Freedomain)
+			"custom_domain": true,
+		}
+	],
+
+	"workers_dev": false, // Turn off typical worker URLs
+
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement

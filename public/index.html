@@ -1,12 +1,63 @@
 <!doctype html>
+<!-- TLE 9 biography of Perez, Sabarre, Salvador, Sahijwani and Sinlao -->
+<!--
+Todo: Add style boxes without divs (article element) 
+Add images template
+Add the common filipino inspiration
+Per page setting (no separate HTML so I don't gotta do all that)
+Publish to workers.dev without that annoying premium thingy
+Avoid divs (done)
+Enable page transitions / complete all the sections
+-->
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Hello, World!</title>
+		<title>Biography</title>
+
+		<link rel="stylesheet" type="text/css" href="assets/styles/common.css">
 	</head>
 	<body>
-		<h1 id="heading">Hello, World!</h1>
-		<p>This page comes from a static asset stored at `public/index.html` as configured in `wrangler.jsonc`.</p>
+		<nav>
+			<!-- Site navigation -->
+			 <a class="float-left"><strong>NAVIGATE</strong></a>
+			<a class="float-left" href="https://lsm.edu.ph">LSM</a>
+			<a class="float-left" href="#home">Home</a>
+			<a class="float-left" href="#photos">Photos</a>
+			<a class="float-left" href="#affiliations">Affiliations</a>
+			<a class="float-left" href="#hobbies">Hobbies</a>
+			<a class="float-left" href="#inspiration">Inspiration</a>
+			<a class="float-left" href="#site">This Site</a>
+
+			<!-- About navigation -->
+			<a class="float-right"><strong>ABOUT US</strong></a>
+			<a class="float-right" href="#perez">Perez</a>
+			<a class="float-right" href="#sabarre">Sabarre</a>
+			<a class="float-right" href="#salvador">Salvador</a>
+			<a class="float-right" href="#sahijwani">Sahijwani</a>
+			<a class="float-right" href="#sinlao">Sinlao</a>
+		</nav>
+
+		<section id="home" class="page">
+			<header>
+				<h1>Biography of our group <u>HTML and CSS</u></h1>
+				<h4>Creative, Supporting, Sincere.</h4>
+				<h4>Honorable, Talented, Masterful Lourdesians.</h4>
+			</header>
+
+			<hr>
+
+			<article class="textbox">
+				<p>This website serves as group's HTML and CSS's performance task: A basic biography involving basic HTML and CSS.</p>
+			</article>
+
+			<article class="textbox">
+				<p>Our group consists of: Jian Perez, Immanuel Sabarre, Franz Salvador, Jash Sahijwani and Aiden Sinlao. This website shows all about them in biography format.</p>
+			</article>
+		</section>
+
+		<section id="perez" class="page">
+
+		</section>
 	</body>
 </html>
