@@ -1,0 +1,28 @@
+#salvador body{
+    background-color: #FFF2EF;
+}
+
+
+#salvador div {
+    width: 30%;
+    display: inline-block;
+}
+
+#salvador header{
+    color: #F7A5A5;
+    padding: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#salvador subheader {
+    color:#5D688A;
+    padding: 10px;
+    font-weight: bold; 
+}
+
+#salvador text {
+    color: #FFDBB6;
+    padding: 10px;
+    font-weight: bold;
+}

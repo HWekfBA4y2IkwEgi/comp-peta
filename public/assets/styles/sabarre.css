@@ -1,0 +1,30 @@
+#sabarre img{
+    border-radius: 150px;
+    width:250px;
+    height:250px;
+    border:solid 5px #FFFFFF;
+    margin:0 auto;
+    display:block;
+}
+#sabarre body{
+    background-color: #014077;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+#sabarre .last-name-h1, #sabarre .section-h2{
+    text-align: center;
+    color:white;
+
+}
+#sabarre table{
+    color:whitesmoke;
+    width:100%;
+}
+#sabarre td{
+    border:solid 3px rgba(29, 30, 61, 0.784);
+    padding:15px;
+    border-radius: 10px;
+    
+}
+#sabarre td{
+   background-color: #203887c4;
+}

@@ -13,9 +13,9 @@ Enable page transitions (IMPOSSIBLE) / complete all the sections
 
 per person:
 ADD:
-Perez /
-Sabarre
-Salvador
+Perez /DONE
+Sabarre /DONE
+Salvador /DOne
 Sahijwani
 Sinlao
 -->
@@ -30,6 +30,9 @@ Sinlao
 
 	<!-- CSS per about page -->
 	<link rel="stylesheet" type="text/css" href="assets/styles/perez.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/salvador.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/sabarre.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/sinlao.css">
 </head>
 
 <body>
@@ -45,7 +48,7 @@ Sinlao
 		<a class="float-left" href="#site">This Site</a>
 		<a class="float-left" href="assets/page.zip" download>Download as ZIP</a>
 
-		<!-- About navigation & in reverse order because of float: right-->
+		<!-- About navigation & in reverse order because of float: right (no flexbox solution)-->
 		<a class="float-right" href="#sinlao">Sinlao</a>
 		<a class="float-right" href="#sahijwani">Sahijwani</a>
 		<a class="float-right" href="#salvador">Salvador</a>
@@ -95,19 +98,37 @@ Sinlao
 
 		<hr>
 
-		<table> <!-- Table compliant format -->
+		<table class="table"> <!-- Table compliant format -->
 			<h1>TODO: FIX PHOTOS TABLE + ADD CSS</h1>
 
-			<th>
-				<td>Perez</td>
-				<td>Sabarre</td>
-				<td>Sahijwani</td>
-				<td>Salvador</td>
-				<td>Sinlao</td>
-			</th>
+			<tr>
+				<th>Perez</th>
+				<th>Sabarre</th>
+				<th>Sahijwani</th>
+				<th>Salvador</th>
+				<th>Sinlao</th>
+			</tr>
 
 			<tr>
-
+				<td>test</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>test</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>test</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
 		</table>
 	</section>
@@ -121,21 +142,31 @@ Sinlao
 
 		<hr>
 
-		<table>
-			<th>
-				<td>
-					<h1>Who?</h1>
-				</td>
-				<td>
-					<h1>How?</h1>
-				</td>
-				<td>
-					<h1>Where?</h1>
-				</td>
-				<td>
-					<h1>Why?</h1>
-				</td>
-			</th>
+		<table class="table">
+			<tr>
+				<th>Who?</th>
+				<th>What?</th>
+				<th>Where?</th>
+				<th>When?</th>
+				<th>Why?</th>
+			</tr>
+
+			<tr>
+				<td>Sinlao, Aiden</td>
+				<td>Class Officer - Secretary</td>
+				<td>9 BL. Andrew</td>
+				<td>Election of C.Os</td>
+				<td>I volunteered because it was something I did since Grade 8, so I continued my legacy.</td>
+			</tr>
+
+			<tr>
+				<td>Sinlao, Aiden</td>
+				<td>Collaborator - English</td>
+				<td>9 BL. Andrew</td>
+				<td>Online meeting</td>
+				<td>I volunteered also because our English teacher is Sir. King.</td>
+			</tr>
+
 		</table>
 	</section>
 
@@ -159,16 +190,6 @@ Sinlao
 		<hr>
 	</section>
 
-	<section id="site" class="page">
-		<header>
-			<h1>About the website of our group <u>HTML and CSS</u></h1>
-			<h4>Creative, Supporting, Sincere.</h4>
-			<h4>Honorable, Talented and Masterful Lourdesians.</h4>
-		</header>
-
-		<hr>
-	</section>
-
 	<!-- About us subsections -->
 
 	<section id="sinlao" class="page">
@@ -178,6 +199,38 @@ Sinlao
 
 		<hr>
 
+		<!-- Sinlao's original code-->
+		<section class="subsection">
+			<figure class="photo-card">
+				<img src="assets/images/sinlao.jpg" alt="Sinlao, Aiden">
+				<figcaption>Sinlao, Aiden</figcaption>
+			</figure>
+
+			<article>
+				<h1>About me</h1>
+				<p>
+					My name is Sinlao, Aiden. I am from 9 BL. Andrew.<br>
+					I study in Lourdes School of Mandaluyong as part of my education.<br><br>
+					Present day, I am Grade 9, writing this in the 1st quarter of this school year. I live currently in Manila, Pasig > Kapitolyo.<br><br>
+					I lead this group (Group HTML and CSS) into success for this quarter, managing code, website operation and making it all happen.<br><br>
+				</p>
+			</article>
+
+			<article>
+				<h1>About me</h1>
+				<p>
+					Past occurences (fill in)
+				</p>
+			</article>
+
+			<article>
+				<h1>About me</h1>
+				<p>
+					For the future (fill in)
+				</p>
+			</article>
+
+		</section>
 	</section>
 
 	<section id="sahijwani" class="page">
@@ -192,9 +245,22 @@ Sinlao
 		<header>
 			<h1>About Salvador, Franz</h1>
 		</header>
-
 		<hr>
-	</section>
+
+		<!-- Original code of Salvador -->
+
+		<img src="assets/images/salv_pfp.jpg" class="pfp" alt="salvador pfp">
+
+		<h1>Franz Harvey B. Salvador</h1>
+		
+		<p>Student of Lourdes School of Mandaluyong</p>
+
+		</div>
+		<div class="Description">
+			<h2 class="color-h2">Hi! I am Salvador from Gr. 9 Bl. Apollinaris of Posat.</h2>
+			<p class="color-p">
+				I was born in January 9, 2011 at Pasig City, which is also where I live right now. <br></p>
+			</section>
 
 	<section id="sabarre" class="page">
 		<header>
@@ -202,7 +268,64 @@ Sinlao
 		</header>
 
 		<hr>
-	</section>
+
+		<header id="#Sabarre">
+			<img src="assets/images/sabarre.jpg">
+			<h1 class="last-name-h1">Immanuel Nicolo S. Sabarre</h1>
+			<h3 class="section-h2">9-BL. Apollinaris Of Posat</h3>
+		</header>
+		
+		<!-- Original code of Sabarre -->
+
+		<main>
+			<table>
+				<tr>
+					<th>Hello! I am Immanuel From 9 Blessed Apollinaris of Posat</th>
+					<th>Where do i live?</th>
+				</tr>
+				<tr>
+					<td>
+						I am born on November 11 , 2011 at Pasig city and through out my life God gave me memorable experiences
+						in the Philippines.<br> One of the most important parts of my life is my Education, espesially my time
+						in LSM. I have been in LSM for 10 years, ever<br> since kindergarden. Through out my years in LSM they
+						taught me the 3 core values which are Gospel Brotherhood, Marian <br>Spirituality , and Christian
+						Leadership.They taught me to become a brother to all even when it comes down to the smallest<br> ant and
+						to the worst bully. Additionally LSM helped shaped me to become a better musician because of the clubs ,
+						bands , and etc.
+					</td>
+					<td>
+						I have lived at Cainta Rizal most of my life, as it has been my home filled with many different
+						experiences from good and bad.<br> However if there are strong typhoons alerted to us, we move to Quezon
+						City to keep us safe from the calamities. These 2<br> places gave me good and bad experiences in my
+						life, so i am happy that i have those properties. I am so thankful for these places<br> because they
+						gave me the safety and comfortness to my liking. Because of these experiences through out my life <br>i
+						became more attached to these places because they played a significant role in my life by providing
+						shelter and safety.
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th>What's my Interest?</th>
+					<th>Achievements</th>
+				</tr>
+				<tr>
+					<td>All my life i was mostly interested in musical Instruments such as Piano , guitar , and drums.<br> Ever
+						since when i was little i was always intrested and never quit on learning piano.<br> I eventually
+						discovered a talent given by God which is playing by ear. I discovered this when i was 8, <br> when i
+						tried playing listening to a song and after listening to it i somehow played it. After a few years of
+						piano, <br>i am currently now trying to teach myself guitar and drums while having a band in the school.
+					</td>
+		
+					<td>My most recent achievement in my academic life is that i got honors during 4th quarter grade 8. <br>This
+						is my first honors in my academic life in LSM. Another achievement i got is that my band performed <br>
+						in multiple school events, Such as: Batch project, Christmas party, fair , etc. Additionally i also did
+						my recital<br>last year december and this year July. I also play in the church to bring my service to
+						God's Almighty grace.</td>
+				</tr>
+			</table>
+		</main>
+		</section>
 
 	<section id="perez" class="page">
 		<header>
@@ -213,7 +336,6 @@ Sinlao
 
 		<!-- Original code of Perez -->
 		<ul>
-		<h3> About Jian Perez </h3>
 		<li>Status:Student</li>
 		<li>School:Lourdes School of Mandaluyong</li>
 		<li>Age:14</li>
