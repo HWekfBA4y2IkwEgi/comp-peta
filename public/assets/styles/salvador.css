@@ -1,4 +1,9 @@
-#salvador body{
+/* Code of Perez modified to target their page, unmodified otherwise */
+/* CSS was designed in a way such that it wouldn't change my group mates designed CSS code except the background.
+Everything you see with my groupmates are the same as how they inteded it.*/
+
+
+#salvador body {
     background-color: #FFF2EF;
 }
 
@@ -8,7 +13,7 @@
     display: inline-block;
 }
 
-#salvador header{
+#salvador header {
     color: #F7A5A5;
     padding: 15px;
     font-weight: bold;
@@ -16,9 +21,9 @@
 }
 
 #salvador subheader {
-    color:#5D688A;
+    color: #5D688A;
     padding: 10px;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 #salvador text {

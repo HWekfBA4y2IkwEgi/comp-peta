@@ -1,5 +1,4 @@
 /* Global settings */
-
 /* CSS was designed in a way such that it wouldn't change my group mates designed CSS code except the background.
 Everything you see with my groupmates are the same as how they inteded it.*/
 
@@ -7,6 +6,16 @@ body {
     background-color: #102a43;
     color: #f0f4f8;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+    /* margin: 0px auto; */
+}
+
+.text-js {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* Navigational Bar (no flex, browser default web responsiveness, no divs) just using the nav element which is a simplified list */
@@ -21,23 +30,31 @@ body {
 
 nav {
     background-color: #486581;
-    padding: 8px;
+    padding: 2px;
     text-align: center;
     overflow: hidden;
 
     border-radius: 4px;
     box-shadow: 5px 10px 18px #0b1c2d50;
-    outline: solid 1px #829ab1; 
+    outline: solid 1px #829ab1;
 }
 
-nav a, nav strong {
+nav a,
+nav strong {
     background-color: #486581;
-    color:#f0f4f8;
+    color: #f0f4f8;
 
-    padding: 4px;
-    margin: 0;
+    padding: 8px;
+    margin: 4px;
 
     text-decoration: none;
+
+    transition: background-color 0.2s ease-in-out;
+}
+
+nav a:not(.text):hover,
+nav a:not(.text) strong:hover {
+    background-color: #829ab1;
 }
 
 /* Articles & Sections */
@@ -48,7 +65,7 @@ section header h1 {
 }
 
 section header h4 {
-    color:  #486581;
+    color: #486581;
     text-align: center;
     margin: 4px;
 }
@@ -58,7 +75,7 @@ section article p {
 }
 
 section article {
-    max-width: 25%;
+    width: 70%;
     margin: 24px auto;
 
     border: 1px solid #829ab1;
@@ -69,42 +86,63 @@ section article {
 }
 
 section hr {
-    background-color:#829ab1;
+    background-color: #829ab1;
     border: none;
 
     height: 1px;
     width: 95%;
 }
 
-/* Pages */
+section .w50 {
+    width: 50%;
+}
+
+.subsection-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    margin: 0 auto;
+}
+
+/* Pages (click functionality) */
 
 .page {
-  display: none;
+    display: none;
 }
 
 .page:target {
-  display: block;
+    display: block;
 }
 
 body:not(:has(:target)) #home {
-  display: block;
+    display: block;
 }
 
 #home:target {
-  display: block;
+    display: block;
 }
 
 /* Tables (photo and affiliations, multipurpose) */
 
 .table {
     border-collapse: collapse;
-    width: 50%;
     margin: 0px auto;
 }
 
-.table td, .table th {
+.table td,
+.table th {
     border: 2px solid #829ab1;
     padding: 12px;
+}
+
+.table th {
+    text-align: center;
+    background-color: #486581;
+    border-radius: 2px;
+}
+
+.table td {
+    text-align: center;
 }
 
 .table tr {
@@ -113,10 +151,4 @@ body:not(:has(:target)) #home {
 
 .table tr:nth-child(odd) {
     background-color: #486581;
-}
-
-.table th {
-    text-align: center;
-    background-color: #486581;
-    border-radius: 2px;
 }
