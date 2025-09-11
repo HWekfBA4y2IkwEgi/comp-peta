@@ -45,7 +45,6 @@ Sinlao
 		<a class="float-left" href="#affiliations">Affiliations</a>
 		<a class="float-left" href="#hobbies">Hobbies</a>
 		<a class="float-left" href="#inspiration">Inspiration</a>
-		<a class="float-left" href="#site">This Site</a>
 		<a class="float-left" href="assets/page.zip" download>Download as ZIP</a>
 
 		<!-- About navigation & in reverse order because of float: right (no flexbox solution)-->
@@ -66,39 +65,41 @@ Sinlao
 
 		<hr>
 
-
 		<h2 class="text-center">Welcome to Group 5's Biography: Group HTML and CSS!</h2>
 		<h3 class="text-center">Our group consists of:</h3>
 
-		<table class="table">
+		<table class="custom">
 			<tr>
-				<th>Grade level and Section</th>
-				<th>Student</th>
-			</tr>
-
-			<tr>
-				<td>Grade 9, Blessed Mark of Aviano</td>
-				<td>Perez, Jian</td>
-			</tr>
-
-			<tr>
-				<td>Grade 9, Blessed Apollinaris of Posat</td>
-				<td>Sabarre, Immanuel</td>
-			</tr>
-
-			<tr>
-				<td>Grade 9, Blessed Apollinaris of Posat</td>
-				<td>Salvador, Franz</td>
-			</tr>
-
-			<tr>
-				<td>Grade 9, Blessed Innocent of Berzo</td>
-				<td>Sahijwani, Jash</td>
-			</tr>
-
-			<tr>
-				<td>Grade 9, Blessed Andrew Hyacinth Longhin</td>
-				<td>Sinlao, Aiden</td>
+				<td>
+					<figure class="photo-card">
+						<img src="assets/images/jian1.jpg" alt="Perez, Jian">
+						<figcaption>Perez, Jian</figcaption>
+					</figure>
+				</td>
+				<td>
+					<figure class="photo-card">
+						<img src="assets/images/sabarre.jpg" alt="Sabarre, Immanuel">
+						<figcaption>Sabarre, Immanuel</figcaption>
+					</figure>
+				</td>
+				<td>
+					<figure class="photo-card">
+						<img src="assets/images/salv_pfp.jpg" alt="Salvador, Franz">
+						<figcaption>Salvador, Franz</figcaption>
+					</figure>
+				</td>
+				<td>
+					<figure class="photo-card">
+						<img src="assets/images/preview.webp" alt="Sahijwani, Jash (no output)">
+						<figcaption>Sahijwani, Jash (no photo)</figcaption>
+					</figure>
+				</td>
+				<td>
+					<figure class="photo-card">
+						<img src="assets/images/sinlao.jpg" alt="Sinlao, Aiden">
+						<figcaption>Sinlao, Aiden</figcaption>
+					</figure>
+				</td>
 			</tr>
 		</table>
 
@@ -127,21 +128,29 @@ Sinlao
 			</article>
 
 			<article>
-				<p>This website serves as group's HTML and CSS's performance task: A basic biography involving basic
-					HTML
-					and CSS.
+				<h3 class="text-center">The purpose?</h3>
+				<p>
+					This website serves as the PETA for students of TLE 9 - Computer in Lourdes School of Mandaluyong.<br><br>
+
+					<strong>This is a requirement for our grade/completion.</strong><br><br>
+					
+					This website is a biography for us, explaining our lives, affiliations, photos, hobbies and a single Filipino inspiration of everyone showing our love for the country, appreciation and effort that we put in.
+
 				</p>
 			</article>
 
 			<article>
-				<p>Our group consists of: Jian Perez, Immanuel Sabarre, Franz Salvador, Jash Sahijwani and Aiden Sinlao.
-					This website shows all about them in biography format.
+				<h3 class="text-center">The goal?</h3>
+				<p>
+					Our goal is to show our biography, learn from it, learn basic HTML and CSS along the way and present it in an interesting way that makes it very much worth it.<br><br>
+					Our additional goal to is to help everyone learn the value of collaboration and ensuring that our words of ourselves are put out there for everyone to know.
 				</p>
 			</article>
 
 			<article>
-				<p>Powered with DPDNS, CF Workers and the amazing group mates behind here.
-
+				<h3 class="text-center">How?</h3>
+				<p>
+					Powered with DPDNS, CF Workesr Static and the amazing groupmates behind here.
 				</p>
 			</article>
 
@@ -170,21 +179,21 @@ Sinlao
 			</tr>
 
 			<tr>
-				<td>test</td>
 				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>test</td>
 				<td></td>
 				<td></td>
 				<td></td>
 				<td></td>
 			</tr>
 			<tr>
-				<td>test</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
 				<td></td>
 				<td></td>
 				<td></td>
@@ -212,8 +221,15 @@ Sinlao
 				<th>Why?</th>
 			</tr>
 
+			<!--Sinlao-->
+
 			<tr>
-				<td>Sinlao, Aiden</td>
+				<td rowspan="3">
+					<figure class="photo-card">
+						<img src="assets/images/sinlao.jpg" alt="Sinlao, Aiden">
+						<figcaption>Sinlao, Aiden</figcaption>
+					</figure>
+				</td>
 				<td>Class Officer - Secretary</td>
 				<td>9 BL. Andrew</td>
 				<td>Election of C.Os</td>
@@ -221,15 +237,30 @@ Sinlao
 			</tr>
 
 			<tr>
-				<td>Sinlao, Aiden</td>
+				<!-- <td>Sinlao, Aiden</td> -->
+				<td>Club Officer - Secretary</td>
+				<td>8 BL. pacifico</td>
+				<td>Election of C.Os</td>
+				<td>I wasn't elected for secretary last year, now that I had the chance, I picked secretary again.</td>
+			</tr>
+
+			<tr>
+				<!-- <td>Sinlao, Aiden</td> -->
 				<td>Collaborator - English</td>
 				<td>9 BL. Andrew</td>
 				<td>Online meeting</td>
 				<td>I volunteered also because our English teacher is Sir. King.</td>
 			</tr>
 
+			<!--Sabarre-->
+
 			<tr>
-				<td>Sabbarre, Immanuel</td>
+				<td rowspan="2">
+					<figure class="photo-card">
+						<img src="assets/images/sabarre.jpg" alt="Sabarre, Immanuel">
+						<figcaption>Sabarre, Immanuel</figcaption>
+					</figure>
+				</td>
 				<td>Collaborator - CLVE</td>
 				<td>9 BL. Apollinaris</td>
 				<td>During a pre test</td>
@@ -237,7 +268,7 @@ Sinlao
 			</tr>
 
 			<tr>
-				<td>Sabbarre, Immanuel</td>
+				<!-- <td>Sabbarre, Immanuel</td> -->
 				<td>Band - Polynomials</td>
 				<td>N/A</td>
 				<td>Grade 7</td>
@@ -245,20 +276,60 @@ Sinlao
 			</tr>
 
 			<tr>
-				<td>Perez Jian Richie S.</td>
+				<td rowspan="3">
+					<figure class="photo-card">
+						<img src="assets/images/jian1.jpg" alt="Perez, Jian">
+						<figcaption>Perez, Jian</figcaption>
+					</figure>
+				</td>
 				<td>Athlete - Swimmer</td>
 				<td>Tigersharks</td>
 				<td>Grade 1 swimming tryouts </td>
 				<td>To improve my body and staying healthy.</td>
 			</tr>
 
+			<!--Perez-->
+
 			<tr>
-				<td>Perez Jian Richie S.</td>
+				<!-- <td>Perez Jian Richie S.</td> -->
 				<td>Class Officer - Sergeant of Arms</td>
 				<td>9 BL. Mark</td>
 				<td>Class Officers selections</td>
-				<td>I was chosen to become the SOA to maintain order and become a peacemaker within each class </td>
+				<td>I was chosen to become the SOA to maintain order and become a peacemaker within each class</td>
 			</tr>
+
+			<tr>
+				<!-- <td>Perez Jian Richie S.</td> -->
+				<td>LitSoc Club member</td>
+				<td>8 BL. Pacifico</td>
+				<td>Club selection</td>
+				<td>I chose Literacy Society because I wanted to learn more literature and my favorite teacher was there.</td>
+			</tr>
+
+			<tr>
+				<td>
+					<figure class="photo-card">
+						<img src="assets/images/salv_pfp.jpg" alt="Salvador, Franz">
+						<figcaption>Salvador, Franz</figcaption>
+					</figure>
+				</td>
+				<td colspan="4">
+					<h1>No given affiliations (no submission)</h1>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<figure class="photo-card">
+						<img src="assets/images/preview.webp" alt="Sahijwani, Jash (no output)">
+						<figcaption>Sahijwani, Jash (no photo)</figcaption>
+					</figure>
+				</td>
+				<td colspan="4">
+					<h1>No given affiliations (no submission)</h1>
+				</td>
+			</tr>
+
 		</table>
 	</section>
 
@@ -272,7 +343,132 @@ Sinlao
 		<hr>
 		<br>
 
+		<table class="table">
+			<tr>
+				<th>Who?</th>
+				<th>What?</th>
+				<th>When?</th>
+				<th>Why?</th>
+			</tr>
 
+			<!-- Perez -->
+
+			<tr>
+				<td rowspan="3">
+					<figure class="photo-card">
+						<img src="assets/images/jian1.jpg" alt="Perez, Jian">
+						<figcaption>Perez, Jian</figcaption>
+					</figure>
+				</td>
+
+				<td>Taking long walks</td>
+				<td>During pandemic</td>
+				<td>Because I was bored staying in my house and I decided to walk around to pass the time.<br>
+					It helps me go outside more often, make me use my phone less and overall see much more of the outside world.
+				</td>
+			</tr>
+
+			<tr>
+				<td>Playing games, specifically RTS games</td>
+				<td>When I was 8</td>
+				<td>
+					Its fun to have full control on how to fight, produce resources, defend and many other mechanics.
+				</td>
+			</tr>
+
+			<tr>
+				<td>Watching shows/movies</td>
+				<td>During pandemic</td>
+				<td>
+					Because movies and TV shows helps me pass the time and bond with my family by hosting movie night.
+				</td>
+			</tr>
+
+			<!--Sinlao-->
+
+			<tr>
+				<td rowspan="2">
+					<figure class="photo-card">
+						<img src="assets/images/sinlao.jpg" alt="Sinlao, Aiden">
+						<figcaption>Sinlao, Aiden</figcaption>
+					</figure>
+				</td>
+
+				<td>
+					Computer programming
+				</td>
+
+				<td>
+					2020 (During pandemic)
+				</td>
+
+				<td>
+					I got a laptop for the first time and all I wanted to do was to make applications of my own which started<br>
+					my tech career.
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Graphics designer
+				</td>
+
+				<td>
+					2023
+				</td>
+
+				<td>
+					I was introduced into blender and adobe illustrator by an ad.<br>
+					 I learned everything that I know of and managed to get<br>
+					enough skills to make a satisfiable magazine or 3D scene (profile pictures) that looks really good.
+				</td>
+			</tr>
+
+			<!--Sabarre-->
+
+			<tr>
+				<td rowspan="">
+					<figure class="photo-card">
+						<img src="assets/images/sabarre.jpg" alt="Sabarre, Immanuel">
+						<figcaption>Sabarre, Immanuel</figcaption>
+					</figure>
+				</td>
+
+				<td colspan="4">
+					<h1>No given affiliations (no submission)</h1>
+				</td>
+			</tr>
+
+			<!--Sahijwani-->
+			<tr>
+				<td rowspan="">
+					<figure class="photo-card">
+						<img src="assets/images/preview.webp" alt="Sahijwani">
+						<figcaption>Sahijwani</figcaption>
+					</figure>
+				</td>
+
+				<td colspan="4">
+					<h1>No given affiliations (no submission)</h1>
+				</td>
+			</tr>
+
+			<!--Salvador-->
+
+			<tr>
+				<td rowspan="">
+					<figure class="photo-card">
+						<img src="assets/images/salv_pfp.jpg" alt="Salvador">
+						<figcaption>Salvador</figcaption>
+					</figure>
+				</td>
+
+				<td colspan="4">
+					<h1>No given affiliations (no submission)</h1>
+				</td>
+			</tr>
+
+		</table>
 	</section>
 
 	<section id="inspiration" class="page">
@@ -283,19 +479,46 @@ Sinlao
 		</header>
 
 		<hr>
+
+		<h1 class="text-center">Jose, Rizal. Why?</h1>
+		<table class="custom">
+			<tr>
+				<td rowspan="2">
+					<figure class="photo-card bigger">
+						<img src="assets/images/joserizal.jpeg" alt="Jose, Rizal">
+						<figcaption>Jose, Rizal</figcaption>
+					</figure>
+				</td>
+
+				<td>
+					<article>
+						<h1>He set us free, for the cost of himself</h1>
+						<p>
+							He saved countless of lives against the spaniards in a movement leading to Philippine independence.<br><br>
+						
+							Selflessness. By setting everyone free he inspired many Filipino to rally against the spaniards.<br><br>
+							He gave his life away, so that we today are able to stand here writing our sentences.
+						</p>
+					</article>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<article>
+						<h1>He wrote, we listened</h1>
+						<p>
+							Writing <strong>Noli Mi Tangere</strong> and <strong>El Filibusterismo</strong>.<br><br>
+							He sent a message to everyone, letting everyone know about what's happening around the world,
+							in the form of a story/poem. Doing this accomplishment while evading the spaniards led to:
+							<strong>Our freedom and success.</strong>
+						</p>
+
+					</article>
+				</td>
+			</tr>
+		</table>
 	</section>
-
-
-	<section id="site" class="page">
-		<header>
-			<h1>About the website of our group <u>HTML and CSS</u></h1>
-			<h4>Creative, Supporting, Sincere.</h4>
-			<h4>Honorable, Talented and Masterful Lourdesians.</h4>
-		</header>
-
-		<hr>
-	</section>
-
 
 	<!-- About us subsections -->
 
