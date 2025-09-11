@@ -159,6 +159,13 @@ body:not(:has(:target)) #home {
     width: 70%;
 }
 
+.custom.img {
+    margin: 0px auto;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
 /* Photocards for the home page and pages involving a table */
 
 .photo-card {
@@ -178,7 +185,6 @@ body:not(:has(:target)) #home {
     width: 150px;
     height: 150px;
     object-fit: cover;
-
 }
 
 .photo-card.bigger  img {
